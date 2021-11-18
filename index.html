@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Learning</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+
+    <!-- body tag -->
+    <!-- scripts for firebase database and storage and other backend connections : -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-database.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-storage.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-analytics.js"></script>
+    <!-- unique database connection id for the users -->
+    <script>
+	// Your web app's Firebase configuration
+	// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+	var firebaseConfig = {
+		apiKey: "AIzaSyAOZYQYzlRxiwErNzwmu-qrBieUlDgFSV0",
+		authDomain: "base-23.firebaseapp.com",
+		databaseURL: "https://base-23-default-rtdb.firebaseio.com",
+		projectId: "base-23",
+		storageBucket: "base-23.appspot.com",
+		messagingSenderId: "753573708266",
+		appId: "1:753573708266:web:1eee8795dcc8e98d0bf293",
+		measurementId: "G-3H5BF4M0XT"
+	};
+	// Initialize Firebase
+	firebase.initializeApp(firebaseConfig);
+	firebase.analytics();
+    </script>		
+    <!-- scripts for jQuery module for easier implementation of code in js files -->
+	<script 	src="https://code.jquery.com/jquery-3.5.1.js"
+			integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+			crossorigin="anonymous">
+	</script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> 
+
+    
+
+    <header> 
+        <h1>
+            Lang Web 23
+        </h1>
+        <h3>All lang spelled by English for easy understanding...</h3>
+    </header>
+
+    
+    <div class="CenterBody">
+        <table id="Appendable" class="Appendable">
+            <tr>
+                <th>Tamil</th>
+                <th>English</th>
+                <th>Telugu</th>
+                <th>Hindi</th>
+            </tr>
+            
+            <tr>
+                <td>Vanakam</td>
+                <td>Hi</td>
+                <td>Namaskar</td>
+                <td>Namaste</td>
+            </tr>
+            
+
+        </table>
+
+    </div>
+
+    <div id="input" class="input">
+        <label for="inputtamil">
+            Tamil
+            <input id="TamilInput" type="text" name="inputtamil">
+        </label>
+        <label for="inputenglish">
+            English
+            <input id="EnglishInput" type="text" name="inputenglish">
+        </label>
+        <label for="inputtelugu">
+            Telugu
+            <input id="TeluguInput" type="text" name="inputtelugu">
+        </label>
+        <label for="inputhindi">
+            Hindi
+            <input id="HindiInput" type="text" name="inputhindi">
+        </label>
+        <button id="sendBtn" style="backgrounD: green; color:white; padding: 5px 10px">
+            ADD
+        </button>
+    </div>
+    
+    <footer>
+        contact: sachayanthan.v.1999@gmail.com 
+    </footer>
+
+    <script src="./JS/index.js"></script>
+
+</body>
+</html>
